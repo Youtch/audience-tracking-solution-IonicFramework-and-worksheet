@@ -1,0 +1,102 @@
+<!-- views/pages/configurer.ejs -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <%- include('../partiels/head.ejs') %>
+
+  <%- include("utils-ajax.js") %>
+  <%- include("header-loader.js") %>
+  <%- include("configurer.js") %>
+
+</head>
+<body class="container">
+
+<header>
+  <%- include('../partiels/header.ejs') %>
+</header>
+
+<!-- Gestion de la fenêtre modal d'affichage des états des traitements-->
+<%- include('../partiels/peupler-modale.ejs') %>
+<%- include('../partiels/peupler-modale.js') %>
+
+<main>
+  <!-- TODO : placer dans un fichier indépendant peupler-toast.ejs et peupler-toast.js -->
+  <div id="toastEtatsTrts" style="display:none" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <!--<img src="..." class="rounded mr-2" alt="...">-->
+      <strong id="toastEtatTrts-titre" class="mr-auto"></strong>
+      <!--<small id="toastEtatTrts-soustitre" class="text-muted">11 min</small>-->
+      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div id="toastEtatTrts-contenu" class="toast-body">
+    </div>
+  </div>
+
+
+  <!-- DEV TEST
+  <div>test_paramsConfig.param1 : < %= test_paramsConfig.param1 % ></div>
+  <div>test_paramsConfig.param2 : < %= test_paramsConfig.param2 % ></div>-->
+  <h3 style="margin-left:15px;margin-bottom:0;margin-right:15px;border: 1px solid blue; border-radius: 15px; padding:5px">Configuration</h3>
+  
+  <div style="border: 1px solid blue; border-radius: 15px; box-shadow: 5px 5px 0 0 #3335; padding:1.5em .5em">
+  
+    <div class="card" width="1000px"> <!-- largeur : homogénéise tous les composants implémentés -->
+    <!--page's card start-->
+
+      <h5 class="panneauDescription-titre">Connexion à <em>Firebase Database</em></h5>
+      
+      <div class="card-body" style="text-align:center !important"><!-- body start-->
+        
+        <label for="databaseUrl">URL de database</label><!-- DesignUI : OK -->
+        <div class="input-group mb-3">
+          <input type="text" aria-label="URL de database" class="form-control full-width" id="input-databaseUrl" maxlength="100">
+          <!-- TODO : à implémenter 
+            <div class="alert alert-warning full-width" role="alert">Le format d'écriture d'URL est incorrecte !</div>
+          -->
+        </div>
+
+        <label for="serviceAccount">Nom du fichier serviceAccount</label><!-- DesignUI : OK -->
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">/src/assets/</span>
+          </div>
+          <input type="text" aria-label="URL de database" class="form-control  full-width" id="input-serviceAccount" maxlength="100">
+          <!-- TODO : à implémenter <div class="alert alert-warning  full-width" role="alert">Le format d'écriture du fichier est incorrecte !</div>-->
+        </div>
+
+        <div class="alert alert-warning estCache" role="alert" id="div-msgEchec-validateurCnxFbDb">Connexion impossible : vérifiez la <b>connexion au réseau</b>, ainsi que <b>l'URL</b> et <b>le nom de fichier</b> !</div>
+        <!-- TODO : lors du click effectuer le test de validation général PUIS afficher toast de confirmation seulement si OK -->
+        <button id="submit" type="button" class="btn btn-primary btn-lg btn-block"  id="btn-enreg-validateurCnxFbDb" onclick='setConfiguration()'>Enregistrer</button>
+      
+      </div><!-- body end-->
+    </div>
+    <BR>
+    <div class="card" width="1000px"> <!-- largeur : homogénéise tous les composants implémentés -->
+    <!--page's card start-->
+      <h5 class="panneauDescription-titre">Paramètres de l'interface</h5>
+      
+      <div class="card-body" style="text-align:center !important"><!-- body start-->
+        
+        <!-- TODO : interaction 1) Lors du lancement sélection du btn matching 2) lors du click modifier les données + afficher toast de confirmation-->
+        <label for="btnGroup-themeGraphique full-width">Thème graphique</label>
+        <div class="btn-group text-center full-width" role="group" aria-label="Thème graphique" id="btnGroup-themeGraphique">
+          <button type="button" class="btn btn-secondary">Clair</button>
+          <button type="button" class="btn btn-secondary">Foncé</button>
+          <button type="button" class="btn btn-secondary">Coloré</button>
+        </div>
+  
+      </div><!--body end-->
+    
+    </div>
+  </div><!--page's card end-->
+  <BR>
+</main>
+
+<footer>
+  <%- include('../partiels/footer.ejs') %>
+</footer>
+
+</body>
+</html>

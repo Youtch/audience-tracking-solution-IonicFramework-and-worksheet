@@ -1,0 +1,225 @@
+/* Configuration du scroll-bar, cf balises "pre"*/
+::-webkit-scrollbar {
+  width: 20px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 20px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #007bff;/* #007bff = variable "primary" */
+  border-radius: 20px;
+}
+
+
+body    { padding-top:50px; }
+
+/* TODO : personnaliser les variables de couleurs de base Bootstrap : 
+ primary, etc*/
+
+/*///////// Styles autour des fonctionnalités logiques /////////*/
+.progress{
+    font-weight: bold;
+    font-size: 1.0em;
+}
+.estCache{
+    display:none;
+}
+.estMontre{
+    display:show;
+}
+
+.estGrise{
+    color:#888 !important;
+}
+
+.bg-grey-medium{
+  background: #cecece;
+}
+
+.header-spinner{
+    color: #ffc107 !important;/* #ffc107 = variable "warning" */
+}
+
+.btn-spinner-sl{
+    min-height: 55px;/*Hauteur fixe prévoyant le spinner*/
+}
+/*.button-primary-spinner{
+    color: #003388 !important; #ffc107 ~ accent de variable "primary" 
+}*/
+.button-info-spinner{
+    color: #88e49a !important;/* #ffc107 ~ accent de variable "secondary" */
+}
+
+.full-width{
+    width:100% !important;
+}
+
+.width-max-400{
+    max-width:400px;
+}
+
+.btn-topMenu{
+  min-height:50px;
+  min-width:50px;
+}
+.btn-topMenu-active{
+   background:#fefe6644 !important;
+   border-radius:5px;
+} 
+
+/*///////// Styles autour des décorations /////////*/
+
+h3{ 
+    font-size: 1.2rem !important;
+    font-weight: 500 !important;
+    font-variant-caps: petite-caps !important;
+}
+
+.message-404-error{
+  color:#b6b6b6 !important;
+  font-size:1.4em;
+}
+
+/*//// styles spécialisés des formulaires ////*/
+fieldset{
+    border:1px solid #cecece;
+    border-radius: 10px;
+    padding:5px;
+    margin-bottom:25px;
+}
+
+legend{
+    font-size: 1.2rem !important;
+    background: #cecece; 
+    border-radius: 5px;
+}
+    
+kbd{
+    background: #c13e43 !important;/*= thème clair froid ; thème clair chaud : 2a837c */
+}
+
+/* Réservés aux cards standards */
+/* NOK !
+.card-header{ 
+    box-shadow: 0px -5px 5px 1px grey !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}*/
+
+.card{
+    border-radius: 15px 15px 0 0;
+}
+/* Réservé aux cards utilisant les class accordion et collapse */
+.card-header{ /* Surcharge en contexte global*/
+    box-shadow: 0px -5px 5px 1px grey !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    /* OK si changement de tous les boutons, et du panneauDescription in page importer
+     background: chocolate;
+
+     OK en accord avec les boutons et panneau panneauDescription in page importer
+    
+     Verts :
+    background: grey; /* métaphore : pro robuste*/
+    background: grey; /* métaphore : débutant;*/
+    background: forestGreen; /* métaphore : vivant et sobre; */
+    /*background: midnightblue; // métaphore : pro robuste et administrateur d'OS*/
+}
+
+.btn-link{
+    font-variant: all-small-caps;
+    color: lightyellow;
+}
+
+.btn-link:hover, .btn-link:focus, .btn-link:active{
+    text-decoration: none;
+    color: #fdfd5f;
+}
+
+.btn-clear{ /* ajout au framework : suppression du visuel du bouton favorisant son icone */
+    background:rvba(0,0,0,0);
+}
+
+.btn-rounded{
+    border-radius:45px;
+}
+
+.btn-aidePreCTA{
+    margin-left:-5px;
+}
+
+.historiqueFichier-li{
+    list-style:none;
+    border:1px solid #cecece;
+	box-shadow:5px 0px 5px 0px #cecece;
+	margin-left:0.5em;
+	padding:1em 0.5em;
+}
+.historiqueFichier-li-metadata{
+	margin-left:1em;
+}
+
+/* NOK : en essai sur importer.ejs */
+.devTest{
+    font-color:#999 !important;
+}
+
+.panneauDescription-titre{ 
+    background: #17a2b8; /*#17a2b8 = variable "info"*/
+    border-radius: 15px 15px 0 0;
+    margin-bottom:0;  
+    padding: 5px 5px 10px 5px;
+}
+
+.panneauDescription-contenu-wrapper{
+    background: #dedede;
+    border-radius: 0px 0px 5px 5px;
+    margin-top:0;
+    padding: 10px 5px 5px 5px;
+}
+.panneauDescription-contenu-interneScrollable{
+    max-height: 75vh;
+    overflow-y: scroll;
+}
+
+#div-content-codeJeuDonnees{
+   max-height:90vh !important;/*Soit 90% d'un écran, au-delà : scrolling utilisable*/
+}
+#txtarJeuDonnees{
+  white-space:pre;/*Retour ligne forcé*/
+}
+
+/*//////////// Styles autour des animations//////////////*/
+.animate-collapseUI-plier
+{
+  /* NOK
+  -webkit-animation: rotate-collapseUI-plier 1s ease;
+  animation: rotate-collapseUI-plier 1s ease; 
+  animation-fill-mode: forwards; // Mettre en pause l'animation en fin de lecture*/
+ transform: rotateZ(0deg); 
+}
+.animate-collapseUI-deplier
+{
+  /* NOK
+  -webkit-animation: rotate-collapseUI-deplier 1s ease;
+  animation: rotate-collapseUI-deplier 1s ease;
+  animation-fill-mode: forwards; // Mettre en pause l'animation en fin de lecture*/
+  transform: rotateZ(90deg);
+}
+/* NOK
+@keyframes rotate-collapseUI-deplier{
+  to {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+@keyframes rotate-collapseUI-plier{
+  to {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+}*/

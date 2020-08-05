@@ -1,0 +1,24 @@
+<!-- views/partiels/header.ejs -->
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <ul class="list-group list-group-horizontal">
+          <!--<li class="list-group-item"><button type="button" class="btn btn-light btn-sm active"  aria-pressed="true" onclick="navGoTo('/RDTestsUIs')">Tester ;-)</button></li>-->
+          <li class="list-group-item">
+            <button type="button" class="btn btn-light btn-sm btn-topMenu" id="menuBtn1" onclick="navGoTo('/configurer')"><i class="fas fa-sliders-h fa-1x"></i></button>
+          </li>
+          <li class="list-group-item">
+            <!--attente connexion serveur--><button type="button" class="btn btn-light btn-sm btn-topMenu estMontre" id="btn-genererCSV-attente">Importer des traces &<BR>générer le fichier CSV <span class="spinner-border spinner-border-sm header-spinner" role="status" aria-hidden="true"></span></button>
+            <!--danger--><button type="button" class="btn btn-light btn-sm btn-topMenu estCache" id="btn-genererCSV-danger" 
+            data-toggle="tooltip" data-placement="bottom" data-html="true" title="Accès impossible car la connexion à Firebase Database a échouée !<br><em>Modifiez vos paramètres de connexion.</em>" onclick="navGoTo('/importer')">Importer des traces &<BR>générer le fichier CSV <span class="badge badge-pill badge-danger">&nbsp;</span></button>
+            <!--success--><button type="button" class="btn btn-light btn-sm btn-topMenu estCache" id="btn-genererCSV-success" onclick="navGoTo('/importer')">Importer des traces &<BR>générer le fichier CSV <span class="badge badge-pill badge-success">&nbsp;</span></button>
+          </li>
+          <li class="list-group-item">
+            <!--warning--><button type="button" class="btn btn-light btn-sm btn-topMenu estCache" id="btn-telechargerHistorique-warning" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Pour télécharger un nouveau fichier CSV, veuillez tout d'abord <em>importer les données<em>, puis <em>générer le fichier<em>" onclick="navGoTo('/telecharger')">Télécharger le fichier CSV &<BR>consulter l'historique <span class="badge badge-pill badge-warning">&nbsp;</span></button>
+            <!--success--><button type="button" class="btn btn-light btn-sm btn-topMenu estCache" id="btn-telechargerHistorique-success" onclick="navGoTo('/telecharger')">Télécharger le fichier CSV &<BR>consulter l'historique <span class="badge badge-pill badge-success">&nbsp;</span></button>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
