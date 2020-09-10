@@ -50,7 +50,7 @@ L’idée de base pour proposer ce projet : En langage webmarketing, l’objecti
 3. GENERER, TELECHARGER & CONSERVER L’HISTORIQUE DES FICHIERS TEXTE AU FORMAT CSV : grâce à l’appli du serveur NodeJs vous générez selon une durée souhaitée (au jour près) un fichier texte CSV à importer dans votre tableur préféré sur la feuille de calcul fournie de la solution. Puis vous définissez vos tableaux & graphes en adaptant l’exemple fourni selon votre quantité de données (combien de mois ?). 
 Enfin vous pouvez visionner et analyser les dashboards pour découvrir ce que vous vouliez savoir des comportements de vos utilisateurs !
 
-<p align="center"><img align="center" src="1.0-diagram_package.png"></img></p>
+<p align="center"><img align="center" src="1.0-diagram_package_FR.png"></img></p>
 
 **Avantage :** cette architecture logicielle ne vous oblige pas à utiliser de serveur Cloud pour stocker les données, ni disposer d’une connexion internet pour visualiser et analyser vos dashboards.
 **Inconvénient :** L’administrateur utilisera deux applications différentes : un navigateur web et un tableur.
