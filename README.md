@@ -27,7 +27,13 @@ The request are explained below:
 - To generate some CSV-formatted-text files (from the freshly imported data)
 - To download some CSV-formatted-text files (ALL of the files are remained stored in the server)
 
-# IV. Appendix
+# IV.Installation
+1. You must firstly set these two constants categories:
+- Set the constants concerning the server filesystem (Unix or Windows) : set in "/.env" (all constants)
+- Set the administrator preferences : set in "/src/config/config-constants.js" (sections LINGUISTIC CHOICES et CSV-TEXT FILE CHOICES)
+2. Complete your Firebase DB account ids on the <em>settings page</em>, excepting if you want to try app with a unique mock dataset.
+
+# V. Appendix
 1) **Documentation:**
 TODO : Open a wiki to describe how is working the code. For example: detail of the server routes to EJS views pages, detail of the input and output concerning AJAX requests specifications…
 2) **Further upgrade :**
@@ -63,7 +69,13 @@ Les requêtes sont les suivantes :
 - Générer des fichiers texte au format CSV (à partir des données venant d’être importées).
 - Télécharger des fichiers texte au format CSV (TOUS les fichiers restent stockés sur le serveur)
 
-# IV.Annexes
+# IV.Installation
+1. Pour commencer configurez les constantes selon deux catégories :
+- Renseignez la configuration relative au système de fichier (Unix ou Windows) : dans "/.env" (toutes constantes)
+- Renseignez les préférences de l'administrateur : dans "/src/config/config-constants.js" (sections LINGUISTIC CHOICES et CSV-TEXT FILE CHOICES)
+2. Saisir les identifiants du compte Firebase DB <em>dans la page de configuration</em>, sauf si vous voulez tester l'appli avec un jeu de donnée de simulation unique.
+
+# V.Annexes
 1) **Documentation :**
 A faire : Créer un Wiki pour décrire le fonctionnement du code. Par exemple : détail des routes du serveur pour les pages de vues EJS, détail des spécifications des requêtes AJAX concernant les entrées et sorties…
 2) **Evolution future :**
