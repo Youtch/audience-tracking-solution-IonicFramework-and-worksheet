@@ -1,7 +1,15 @@
 ### English <img align="center" width="20px" src="https://lipis.github.io/flag-icon-css/flags/1x1/gb.svg"></img>
 
-# I.	Disclaimer
-The collected data of user behaviors inside your application/applications should be anonymized to preserve the privacy of your users. In the way to improve the relationship of trust with your users, we advice you to display an information message (e.g. in section “credits”) about this collecting in your application/applications.
+# I. Disclaimer & intellectual property
+
+1. Disclaimer : The collected data of user behaviors inside your application/applications should be anonymized to preserve the privacy of your users. In the way to improve the relationship of trust with your users, we advice you to display an information message (e.g. in section “credits”) about this collecting in your application/applications.
+
+2. License: The application is distributed under MIT license (See LICENCE.MD).
+
+3. Credits for certain image files
+- file.svg : Icons made by [iconixar](https://www.flaticon.com/authors/iconixar) from [www.flaticon.com](https://www.flaticon.com)
+- unknown-document.svg - Icons made by [Freepik](https://www.flaticon.com/authors/freepik) from [www.flaticon.com](https://www.flaticon.com/)
+
 
 # II. Purpose of this project
 ## A. Goal
@@ -43,8 +51,15 @@ The app might integrate some graphical data representations, a dashboard page in
 
 ### Français <img align="center" width="20px" src="https://lipis.github.io/flag-icon-css/flags/1x1/fr.svg"></img>
 
-# I. Avertissement
-La collecte de données des comportements d’utilisateurs à l’intérieur de votre application/vos applications devrait être anonymisée afin de respecter la vie privée de vos utilisateurs. Pour accroitre votre relation de confiance avec les utilisateurs nous vous conseillons d'afficher une note d’information relative à cette collecte dans votre application/vos applications (par exemple dans la page « à propos »). 
+# I. Avertissement & propriété intellectuelle
+
+1. Avertissement : La collecte de données des comportements d’utilisateurs à l’intérieur de votre application/vos applications devrait être anonymisée afin de respecter la vie privée de vos utilisateurs. Pour accroitre votre relation de confiance avec les utilisateurs nous vous conseillons d'afficher une note d’information relative à cette collecte dans votre application/vos applications (par exemple dans la page « à propos »). 
+
+2. Licence : L'application est diffusé sous la licence MIT (voir LICENCE.MD).
+
+3. Crédits de certains fichiers d'images
+- file.svg : Icons made by [iconixar](https://www.flaticon.com/authors/iconixar) from [www.flaticon.com](https://www.flaticon.com)
+- unknown-document.svg - Icons made by [Freepik](https://www.flaticon.com/authors/freepik) from [www.flaticon.com](https://www.flaticon.com/)
 
 # II. La raison d’être du projet 
 ##A. L’objectif
