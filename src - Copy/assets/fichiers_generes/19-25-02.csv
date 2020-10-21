@@ -1,0 +1,24 @@
+key;date;sessionKey;statsSessionId;licenceEstPremium;androidVersion;page;composantUI;cheminNavigation;nombreCmpsntUINonDstnctVisites;nombrePages;nbUiAidesOuverts;
+-MHxD-5e_0jBCBaFiElv;24-9-2020 0:6:42;;-MHxD-5e_0jBCBaFiElv;;;app.component;initApp;;;;
+-MHxD-agkIpO1EIJKPew;24-9-2020 0:6:44;;-MHxD-5e_0jBCBaFiElv;;;PrevisionsPage;btnMenu;;;;
+-MHxDnpUSu-IuUOeAKgz;24-9-2020 0:10:14;;-MHxD-5e_0jBCBaFiElv;;;SettingsPage;btnRetourPage;;;;
+-MHxDoEggYunw2pUQif5;24-9-2020 0:10:16;;-MHxD-5e_0jBCBaFiElv;;;StationsFavoritesModal;btnFermer;;;;
+-MHxDohqSqY029nd4ECe;24-9-2020 0:10:18;;-MHxD-5e_0jBCBaFiElv;;;PrevisionsPage;btnGeoloc;;;;
+-MHxDr0RawV1WLS5MXpY;24-9-2020 0:10:27;;-MHxD-5e_0jBCBaFiElv;;;PrevisionsPage;btnGeoloc;;;;
+-MHxDzvEV4yHe0VFJ6kt;24-9-2020 0:11:4;-MHxD-6KqkNLV_O4cuQg;-MHxD-5e_0jBCBaFiElv;false;10;PrevisionsPage;btnMenu;app.component>PrevisionsPage>SettingsPage>StationsFavoritesModal>PrevisionsPage;6;6;0
+-MI-pzRSPkhle0n4fBzW;24-9-2020 17:0:14;;-MI-pzRSPkhle0n4fBzW;;;app.component;initApp;;;;
+-MI-q0-f0jy_N1-E41KI;24-9-2020 17:0:21;;-MI-pzRSPkhle0n4fBzW;;;PrevisionsPage;btnMenu;;;;
+-MI-qENxPddQXxEBw9B6;24-9-2020 17:1:19;;-MI-pzRSPkhle0n4fBzW;;;SettingsPage;btnRetourPage;;;;
+-MI-qEaM2d2VvYmjv3XI;24-9-2020 17:1:20;;-MI-pzRSPkhle0n4fBzW;;;StationsFavoritesModal;btnFermer;;;;
+-MI-qF2sx196D6faUKDP;24-9-2020 17:1:22;;-MI-pzRSPkhle0n4fBzW;;;PrevisionsPage;btnMenu;;;;
+-MI-qFtpqWBkGBlyyqIV;24-9-2020 17:1:26;;-MI-pzRSPkhle0n4fBzW;;;AProposPage;btnLancerPlanete;;;;
+-MI-qFtquhn8T-Z32UKy;24-9-2020 17:1:26;;-MI-pzRSPkhle0n4fBzW;;;AProposPage;lienLancerFandom;;;;
+-MI-qGzzC7kyE11V8Ww6;24-9-2020 17:1:30;;-MI-pzRSPkhle0n4fBzW;;;AProposPage;btnLancerPlanete;;;;
+-MI-qH-9MZwYMQQ2Mhqj;24-9-2020 17:1:30;;-MI-pzRSPkhle0n4fBzW;;;AProposPage;lienLancerFandom;;;;
+-MI-qJHFGyJtSotSvo-J;24-9-2020 17:1:40;;-MI-pzRSPkhle0n4fBzW;;;AProposPage;lienLancerRessourceUrl;;;;
+-MI-qLG10wfGn7nLf1_i;24-9-2020 17:1:48;;-MI-pzRSPkhle0n4fBzW;;;AProposPage;btnRetourPage;;;;
+-MI-qLgb4VUYKy24iDN7;24-9-2020 17:1:49;;-MI-pzRSPkhle0n4fBzW;;;StationsFavoritesModal;btnFermer;;;;
+-MI-qN7-OQMO2pDSWp2j;24-9-2020 17:1:55;;-MI-pzRSPkhle0n4fBzW;;;PrevisionsPage;barreRechSaisir;;;;
+-MI-qNn0vEqzjQCWGbFC;24-9-2020 17:1:58;;-MI-pzRSPkhle0n4fBzW;;;PrevisionsPage;barreRechSaisir;;;;
+-MI-qO_y9d2ZWEVpok8E;24-9-2020 17:2:1;;-MI-pzRSPkhle0n4fBzW;;;PrevisionsPage;barreRechSaisir;;;;
+-MI-qPL_c9T5ha4VxBuA;24-9-2020 17:2:4;-MI-pzSCGJFiDAMdKatQ;-MI-pzRSPkhle0n4fBzW;false;10;PrevisionsPage;btnGeoloc;app.component>PrevisionsPage>SettingsPage>StationsFavoritesModal>PrevisionsPage>AProposPage>StationsFavoritesModal>PrevisionsPage;7;7;0

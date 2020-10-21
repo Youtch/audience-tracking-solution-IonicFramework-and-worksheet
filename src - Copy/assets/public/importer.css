@@ -1,0 +1,94 @@
+/*MIT License
+
+Copyright (c) 2020 FRANÇOIS GARDIEN
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.*/
+
+/*assets/public/importer.css*/
+
+/********************************************************
+******************** Colors features ********************
+********************************************************/
+.estGrise{
+    color:#888 !important;
+}
+.bg-grey-medium{
+ 	background: #cecece;
+}
+
+/***********************************************************
+******************** Sizing in the page ********************
+***********************************************************/
+.full-width{
+    width:100% !important;
+}
+.width-max-400{
+    max-width:400px;
+}
+
+/*************************************************************************
+******************** Decoration of bootstrap features ********************
+*************************************************************************/
+.btn-spinner-sl{
+    min-height: 55px;/*Used to fixed the size of spinner whatever its wrapper component*/
+}
+.button-info-spinner{
+    color: #88e49a !important;/*#ffc107 = accent of the variable named "secondary"*/
+}
+
+/************************************************************
+******************** Decoration of forms ********************
+************************************************************/
+fieldset{
+    border:1px solid #cecece;
+    border-radius: 10px;
+    padding:5px;
+    margin-bottom:25px;
+}
+legend{
+    font-size: 1.2rem !important;
+    background: #cecece; 
+    border-radius: 5px;
+}   
+kbd{
+    background: #c13e43 !important;
+}
+
+/*********************************************************************
+******************** Decoration of CTA components ********************
+*********************************************************************/
+.btn-link{
+    font-variant: all-small-caps;
+    color: lightyellow !important;
+};
+}
+.btn-link:hover, .btn-link:focus, .btn-link:active{
+    text-decoration: none;
+    color: #fdfd5f;
+}
+.btn-rounded{
+    border-radius:45px;
+}
+
+/************************************************************************
+******************** Decoration of dataset container ********************
+************************************************************************/
+#div-content-codeJeuDonnees{
+   max-height:90vh !important;/*It means 90% of screen height (the overflowing content is scrolled)*/
+}

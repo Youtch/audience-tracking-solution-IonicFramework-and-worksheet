@@ -1,0 +1,43 @@
+7[?47h[27m[24m[0m[H[J[45;1H</Gardien/Documents/Apache www/NodeJs/STAU-community/.git/COMMIT_EDITMSG"<NodeJs/STAU-community/.git/COMMIT_EDITMSG" [converted][unix] 534L, 34603C[2;1H[1m[36m# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch [0m[1m[31mmaster[0m
+[1m[36m# Your branch is ahead of '[0m[1m[31morigin/master[0m[1m[36m' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
+# [0m[1m[34mChanges to be committed:[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/.sonar_lock[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/css-bundle/bin/server[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/css-bundle/lib/src/server.d.ts[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/css-bundle/lib/src/server.js[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/css-bundle/lib/src/server.js.map[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/css-bundle/lib/tsconfig.tsbuildinfo[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/css-bundle/package/package.json[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/css-bundle/package/yarn.lock[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/css-bundle/stylelintconfig.json[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/report-task.txt[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/scanner-report/activerules.pb[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/scanner-report/analysis-warnings.pb[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/scanner-report/analysis.log[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/scanner-report/component-1.pb[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/scanner-report/component-10.pb[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/scanner-report/component-11.pb[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/scanner-report/component-12.pb[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/scanner-report/component-13.pb[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/scanner-report/component-15.pb[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/scanner-report/component-16.pb[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/scanner-report/component-17.pb[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/scanner-report/component-18.pb[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/scanner-report/component-19.pb[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/scanner-report/component-2.pb[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/scanner-report/component-20.pb[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/scanner-report/component-21.pb[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/scanner-report/component-22.pb[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/scanner-report/component-23.pb[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/scanner-report/component-24.pb[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/scanner-report/component-25.pb[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/scanner-report/component-26.pb[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/scanner-report/component-27.pb[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/scanner-report/component-28.pb[0m
+[1m[36m#       [0m[1m[32mnew file[0m[1m[36m: [0m[1m[35m  .scannerwork/scanner-report/component-30.pb[0m
+[1m[7m<ache www/NodeJs/STAU-community/.git/COMMIT_EDITMSG [unix] (10:34 21/10/2020)1,0-1 Top[1;1H[0m[45;1HType  :qa!  and press <Enter> to abandon all changes and exit Vim[45;66H[K[1;1H[45;76H^M[1;1H[45;76H  [2;1H[44;2H[1m[7mApache www/NodeJs/STAU-community/.git/COMMIT_EDITMSG [unix] (10:34 21/10/2020)2,[2;1H[0m[45;76H^M[2;1H[45;76H  [3;1H[44;80H[1m[7m3[3;1H[0m[45;76H^M[3;1H[45;76H  [4;1H[44;80H[1m[7m4[4;1H[0m[45;76H²[4;1H[45;76H [4;1H[45;76H^[[4;1H[45;76H  [4;1H[45;76H^[[4;1H[45;76H  [4;1H[45;76H^[[4;1H[45;76H  [4;1H[45;76H^[[4;1H[45;76H  [4;1H[45;76H^M[4;1H[45;76H  [5;1H[44;80H[1m[7m5[5;1H[0m[45;76Hw[5;1H[45;76H [5;3H[44;82H[1m[7m3[5;3H[0m[45;76Hq[5;3H[45;77H![5;3H[45;76H  [5;3H[45;76H^M[5;3H[45;76H  [6;1H[44;80H[1m[7m6,1[6;1H[0m[45;76H^M[6;1H[45;76H  [7;1H[44;80H[1m[7m7[7;1H[0m[45;76H^M[7;1H[45;76H  [8;1H[44;80H[1m[7m8[8;1H[0m[45;76H^M[8;1H[45;76H  [9;1H[44;80H[1m[7m9[9;1H[0m[45;76Hq[9;1H[45;77H![9;1H[45;76H  [9;1H[45;76H^M[9;1H[45;76H  [10;1H[44;2H[1m[7mpache www/NodeJs/STAU-community/.git/COMMIT_EDITMSG [unix] (10:34 21/10/2020)10[10;1H[0m[45;76Hq[10;1H[45;77H![10;1H[45;76H  [10;1H[45;76H^M[10;1H[45;76H  [11;1H[44;80H[1m[7m1[11;1H[0m[45;76H![11;1H[45;77Hq[11;1H[45;76H  [11;1H[45;76H![11;1H[45;76H [11;1H[45;76H^M[11;1H[45;76H  [12;1H[44;80H[1m[7m2[12;1H[0m[45;76H^M[12;1H[45;76H  [13;1H[44;80H[1m[7m3[13;1H[0m[45;76H^M[13;1H[45;76H  [14;1H[44;80H[1m[7m4[14;1H[0m[45;76H^M[14;1H[45;76H  [15;1H[44;80H[1m[7m5[15;1H[0m[45;76H^M[15;1H[45;76H  [16;1H[44;80H[1m[7m6[16;1H[0m[45;76H^M[16;1H[45;76H  [17;1H[44;80H[1m[7m7[17;1H[0m[45;76H^M[17;1H[45;76H  [18;1H[44;80H[1m[7m8[18;1H[0m[45;76H^[[18;1H[45;76H  [18;1H[45;76H^[[18;1H[45;76H  [18;1H[45;76Ha[18;1H[45;76H [18;2H[45;1H[1m-- INSERT --[0m[45;13H[K[44;82H[1m[7m2[18;2H[0m[1m[36mq[0m[44;2H[1m[7mhe www/NodeJs/STAU-community/.git/COMMIT_EDITMSG[+][29C3[18;3H[0m[1m[36m![0m[44;82H[1m[7m4[18;4H[0m[1m[36mw[0m[44;82H[1m[7m5[18;5H[0m[1m[36m![0m[44;82H[1m[7m6[18;6H[0m[43;1H[M[19;1H[L[18;6H[K[19;1Hnew file:   .scannerwork/css-bundle/stylelintconfig.json[44;80H[1m[7m9,1[19;1H[0m[43;1H[M[20;1H[L[19;1H[K[20;1Hnew file:   .scannerwork/css-bundle/stylelintconfig.json[44;79H[1m[7m20[20;1H[0m[45;1H[K[20;1H[45;1HType  :qa!  and press <Enter> to abandon all changes and exit Vim[20;1H[45;76H^M[20;1H[45;76H  [21;1H[44;80H[1m[7m1[21;1H[0m[45;76H^M[21;1H[45;76H  [22;1H[44;80H[1m[7m2[22;1H[0m[45;76H^M[22;1H[45;76H  [23;1H[44;80H[1m[7m3[23;1H[0m[45;76H^M[23;1H[45;76H  [24;1H[44;80H[1m[7m4[24;1H

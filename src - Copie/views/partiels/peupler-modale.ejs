@@ -1,0 +1,24 @@
+<!-- Dépendances : 
+   views/partiels/bo/peupler-modale.js 
+
+  Gestion de la fenêtre modal d'affichage des états des traitements    
+ -->
+<div class="modal fade" id="modalEtatsTrts" tabindex="-1" role="dialog" aria-labelledby="modalEtatsTrts-titre" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"><i id="modalEtatsTrts-iconeTitre" class="fas estCache"></i>&nbsp<span id="modalEtatsTrts-titre">;Titre</span></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="modalEtatsTrts-contenu" class="modal-body">
+
+      </div>
+      <div class="modal-footer">
+        <button id="modalEtatsTrts-btnValider" type="button" class="btn btn-primary estCache" onclick="ctaValiderModalEtatsTrt()">Valider</button>
+        <button id="modalEtatsTrts-btnAnnuler" type="button" class="btn btn-secondary estCache" data-dismiss="modal" onclick="ctaAnnulerModalEtatsTrt()">Annuler</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,1 @@
+ 2jsXvhrsrc/views/pages/configurer.js

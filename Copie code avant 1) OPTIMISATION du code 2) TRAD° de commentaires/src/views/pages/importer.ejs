@@ -1,0 +1,225 @@
+<!-- views/pages/importer.ejs -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- Dépendances EJS, CF suite en fin de script :-->
+	<%- include('../partiels/head.ejs') %>
+
+  <!-- Dépendances JS :-->
+  <%- include("header-loader.js") %>
+  <%- include("utils-ajax.js") %>
+  <%- include ('commun-ui.js') %>
+  <%- include ('validateurs-input.js') %>
+  <!--Si datepicker alors placé en bas : '../scripts/importer.js'-->
+  <%- include ('../partiels/animer-toggleCollapse.js') %>
+
+</head>
+<body class="container">
+
+<header>  
+  <%- include('../partiels/header.ejs') %>
+</header>
+<!-- Gestion de la fenêtre modal d'affichage des états des traitements-->
+<%- include('../partiels/peupler-modale.ejs') %>
+<%- include('../partiels/peupler-modale.js') %>
+
+<main>
+  <div class="card-body text-center">
+    <!-- TODO : utiliser une requête Ajax -->
+	    <p id="accessFbDbStateSuccess" class="estCache"><span class="badge badge-pill badge-success"><i class="fas fa-database fa-1x"></i></span> Le serveur <em>Firebase Database</em> est disponible</p>
+	    <p id="accessFbDbStateFailed" class="estCache"><span class="badge badge-pill badge-danger"><i class="fas fa-exclamation fa-1x"></i></span> Le serveur <em>Firebase Database</em> est indisponible</p>
+  </div>
+
+  <div class="card text-center" style="max-width:70rem;text-align:center">
+  <!-- Wrapper : début -->
+
+
+    <!-- Branche #1 IMPORTER : début -->
+    <div class="card-header" id="enteteUn">
+      <h2 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#depliageUn" aria-expanded="true" aria-controls="depliageUn" onclick="toggleCollapse('btn-collapseUn-chevron')">
+          <i class="fas fa-database"></i> Importer un jeu de données <i  id="btn-collapseUn-chevron" class="fas fa-chevron-circle-right"></i>
+        </button>
+      </h2>
+    </div>
+  
+
+    <div id="depliageUn" class="collapse text-center" aria-labelledby="enteteUn">
+      <div class="card-body text-center" >
+        
+        <!-- /////////////// Bloc importer : bouton et  message-->
+        <fieldset id="fldst-importer-dates">
+          <legend class="text-left estGrise" id="legend-fieldset-selectionPeriodeDonnees">
+            1) Sélectionnez la période à importer ou "importer toutes les données
+          </legend>
+          <div class="form-row">
+            <div class="form-group col-auto" id="div-inpt-dateMinLimite" style="min-width:350px"><!--Style min-width : homogénise les 2 état de "inpt-dateMaxLimite" estMontre|estCache-->
+              <div class="form-row">
+                <label for="inpt-dateMinLimite">Début (incluse)</label>
+                <input id="inpt-dateMinLimite" onchange="onChange_validerDates()" onkeydown="onKeyDown_datePicker(event)" />
+              </div>
+              <div class="form-row">
+                <button type="button" class="btn btn-primary btn-block" data-toggle="button" aria-pressed="false" onclick="onClick_btnTgglDateLimite(event)" id="btn-tggl-DatePlusAncienne-Min">Donnée la plus ancienne  <i class="fas fa-check text-light estCache" id="icon-btn-tggl-DatePlusAncienne-Min-chkd"></i><i class="far fa-square text-light estMontre" id="icon-btn-tggl-DatePlusAncienne-Min-unchkd"></i></button>
+              </div>
+              <div class="alert alert-warning width-max-400 estCache" role="alert" id="div-errorMsg-dateMinLimite"></div>
+            </div>
+            <div class="form-group col-auto" id="div-inpt-dateMaxLimite" style="padding-left:15px;min-width:350px"><!--Style min-width : homogénise les 2 état de "inpt-dateMaxLimite" estMontre|estCache-->
+              <label for="inpt-dateMaxLimite">Fin (incluse)</label>
+              <input id="inpt-dateMaxLimite" onchange="onChange_validerDates()" onkeydown="onKeyDown_datePicker(event)"/>
+              <div class="form-row">
+                <button type="button" class="btn btn-primary btn-block" data-toggle="button" aria-pressed="false" onclick="onClick_btnTgglDateLimite(event)" id="btn-tggl-DatePlusRecente-Max">Donnée la plus récente  <i class="fas fa-check text-light estCache" id="icon-btn-tggl-DatePlusRecente-Max-chkd"></i><i class="far fa-square text-light estMontre" id="icon-btn-tggl-DatePlusRecente-Max-unchkd"></i></button>
+              </div>
+              <div class="alert alert-warning  width-max-400 estCache" role="alert" id="div-errorMsg-dateMaxLimite"></div>
+            </div>
+          </div>
+          <p class="text-left">OU</p>
+          <div class="form-group text-left">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="cbToutesDonnees" onclick="onClick_cbToutesDonnees(event)">
+              <label class="form-check-label" for="cbToutesDonnees">Importer toutes les données</label>
+            </div>
+          </div>
+          <div class="invalid-feedback"></div>
+          <div class="alert alert-warning estCache" role="alert"></div>
+        </fieldset>
+        
+        <fieldset>
+          <legend class="text-left estGrise" id="legend-fieldset-importerDonnees">
+            2) Lancez l'importation :
+          </legend>
+          <div class="text-left" id="div-cmd-importer">
+            <div class="alert alert-warning  width-max-400 text-center estCache" role="alert" id="div-errorMsg-btn-imprtrJD"></div>
+            <div class="form-row">
+              <div class="form-group col-auto">
+                <button type="button" class="btn btn-primary btn-spinner-sl estCache" onclick="onSubmitImporter(false)" id="btn-imprtrJD-std">
+                 Lancer l'importation <i class="fas fa-database"></i> <span class="spinner-border spinner-border-sl button-info-spinner estCache" role="status" aria-hidden="true" id="spinner-btn-imprtrJD-std"></span> </button>
+                <p class="text-center rounded bg-grey-medium p-3 estCache width-max-400" id="p-subTitle-btn-imprtrJD-std"></p><!---Remplissage texte par JS-->
+<!-- UX TEST
+                <div class="progress" style="height: 20px;">
+                  <div class="progress-bar progress-bar-animated progress-bar-striped bg-info" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100"><span>Traitement en cours...</span></div>
+                </div>-->
+              </div>
+
+          </div>
+
+        </fieldset>
+        
+  <fieldset>
+          <legend class="text-left estGrise" id="legend-fieldset-jeuDonnees">
+            3) Vérifiez vos données
+          </legend>
+
+          <pre class="panneauDescription-contenu-wrapper panneauDescription-contenu-interneScrollable estCache" id="pre-wrapper-codeJeuDonnees"><i class="fas fa-exclamation-circle fa-3x estMontre" id="icon-codeJeuDonnees"></i><div id="div-content-codeJeuDonnees"></div></pre>
+
+          <div id="div-metadonneesJeuDonnees" class="estCache">
+            <h5 class="panneauDescription-titre"><i class="fas fa-info-circle"></i>&nbsp;Métadonnées (de l'import) :</h5>
+            <!-- Ou tachometer-alt -->
+            <div class="panneauDescription-contenu-wrapper">
+              <div id="" class="card-body text-left estMontre">
+                <h5>Première donnée : <span class="badge badge-pill badge-info" id="metadonneesJeuDonnees-span-dateDebut"></span></h5> 
+                <h5>Dernière donnée : <span class="badge badge-pill badge-info" id="metadonneesJeuDonnees-span-dateFin"></span></h5>
+                <h5>Nombre d'actions d'utilisateurs : <span class="badge badge-pill badge-info" id="metadonneesJeuDonnees-span-nbAU"></span></h5>
+                <h5>Nombre de sessions d'utilisateurs : <span class="badge badge-pill badge-info" id="metadonneesJeuDonnees-span-nbSU"></span></h5>
+              </div>
+            </div>
+          </div>
+        
+        </fieldset>
+      
+      </div>
+    </div>
+    <!-- Branche #1 IMPORTER : fin -->
+
+    
+    <!-- Branche #2 GENERER : début -->
+    <div class="card-header" id="enteteDeux">
+      <h2 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#depliageDeux" aria-expanded="true" aria-controls="depliageDeux" onclick="toggleCollapse('btn-collapseDeux-chevron')">
+          <i class="fas fa-cogs"></i> Générer le fichier CSV <i id="btn-collapseDeux-chevron" class="fas fa-chevron-circle-right"></i>
+        </button>
+      </h2>
+    </div>
+
+    <div id="depliageDeux" class="collapse" aria-labelledby="enteteDeux">
+
+      <div class="card-body text-left" >
+        <!-- Contenu :-->
+        <label for="basic-url"><em>Composer le modèle en utilisant <B>seulement</b> les mots-clés suivants, <b>séparés par -</b> : </em>
+          <ul class="list-unstyled">
+            <!-- TODO : intégrer le formatage des puces dans une feuille de syle globale "globales.css"
+              passer les mots-clés en style "code" -->
+            <li style="margin-left:1em"><kbd onclick="addTag(event)">dateFr</kbd> date actuelle, exemple : 20-10-2020</li>
+            <!--<li style="margin-left:1em"><kbd>dateFR</kbd> date actuelle, exemple d'écriture : 20-10-2020</li>-->
+            <li style="margin-left:1em"><kbd onclick="addTag(event)">dateUs</kbd> date actuelle, exemple : 2020-20-10</li>
+            <li style="margin-left:1em"><kbd onclick="addTag(event)">horaire</kbd> horaire actuelle, exemple : 11-22-00</li>
+            <li style="margin-left:1em"><kbd onclick="addTag(event)">nbActions</kbd> nombre d'actions d'utilisateur, exemple : 500AU</li>
+            <li style="margin-left:1em"><kbd onclick="addTag(event)">nbSessions</kbd> nombre de sessions d'utilisateur, exemple : 30SU</li>
+            <li style="margin-left:1em"><kbd onclick="addTag(event)">-</kbd>&nbsp;&nbsp;caractère de ponctuation</li>
+          </ul>
+        </label>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <button type="button" class="btn btn-rounded btn-primary btn-sm" onclick="actionModeleFichierCSV(0)"><i class="fas fa-times fa"></i></button>
+          </div>
+          <input type="text" class="form-control" aria-label="Modèle de nommage de fichier de données" style="max-width:40em" placeholder="ex: dateFR-horaire.csv" id="inpt-modeleFichierCSV" onchange="onChange_enregistrerModeleFichierCSV(event)">
+          <div class="input-group-append">
+            <span class="input-group-text">.csv</span>
+          </div>
+          <button type="button" class="btn btn-primary btn-sm" onclick="actionModeleFichierCSV(1)">Enregistrer <i class="fas fa-check text-success estCache" id="icon-enregModelFich-fait"></i><i class="fas fa-times text-danger estCache" id="icon-enregModelFich-erreur"></i>
+          </button>
+        </div>
+        <div class="alert alert-warning estCache" role="alert" id="div-errorMsg-btn-enregModelFich"></div>
+      </div>
+
+      <div class="card-body text-left" >
+        <button type="button" class="btn btn-primary btn-lg btn-block estCache" onclick="lancerGenererCSV()" id="btn-gnrrFchr">
+          Générer le fichier<i class="fas fa-cogs"></i></i>
+          <!-- UX à valider : 
+          Générer <i class="fas fa-cogs"></i><i class="fas fa-table"></i>-->
+        </button>
+      </div>
+    </div>
+    <!-- Branche #2 GENERER : fin -->
+
+
+    <!-- Branche #3 : début --><!-- DEV TESTS-->
+<!--
+    <div class="card-header" id="enteteTrois">
+      <h2 class="mb-0">
+        <button class="btn btn-link devTest" type="button" data-toggle="collapse" data-target="#depliageTrois" aria-expanded="true" aria-controls="depliage" onclick="toggleCollapse('btn-collapseTrois-chevron')">DEV TESTS  <i id="btn-collapseTrois-chevron" class="fas fa-chevron-circle-right"></i>
+        </button>
+      </h2>
+    </div>
+
+    <div id="depliageTrois" class="collapse" aria-labelledby="enteteTrois">
+      <button type="button" class="btn btn-primary" onclick="gererStockageDonnees(0)">Afficher donnée #1 et donnée #2</button>
+
+      <div class="form-group">
+        <label for="dataStorage1">Modification de donnée #1</label>
+        <input type="text" class="form-control" id="dataStorage1" aria-describedby="">
+      </div>
+      <button type="button" class="btn btn-primary" onclick="gererStockageDonnees(1)">Valider #1</button>
+
+      <div class="form-group">
+        <label for="dataStorage2">Modification de donnée #2</label>
+        <input type="text" class="form-control" id="dataStorage2" aria-describedby="">
+      </div>
+      <button type="button" class="btn btn-primary" onclick="gererStockageDonnees(2)">Valider #2</button>
+
+    </div>
+-->
+    <!-- Branche #3 : fin -->
+
+  <!-- Wrapper : fin -->
+  </div>
+
+
+</main>
+
+<footer>
+  <%- include('../partiels/footer.ejs') %>
+</footer>
+
+</body>
+</html>
+<%- include ('importer.js') %>
