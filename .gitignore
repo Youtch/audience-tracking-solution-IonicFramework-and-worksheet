@@ -9,11 +9,16 @@ npm-debug.log
 *.sublime-project
 *.sublime-workspace
 *[[DEV]].*
+.scannerwork
 coding in progress
+Copie code avant 1) OPTIMISATION du code 2) TRAD° de commentaires
+conception projet
+fiddler-npmscript.ps1
+src - Copie
+src - Copy
 src/assets/DEV
 src/assets/local-storage # chemin absolu
 src/assets/swmg-meh-firebase-adminsdk-a5wnc-a5788834ef.json
-fiddler-npmscript.ps1
 
 # Spécifique aux sessions d'utilisateurs
 src/assets/fichiers_generes/*

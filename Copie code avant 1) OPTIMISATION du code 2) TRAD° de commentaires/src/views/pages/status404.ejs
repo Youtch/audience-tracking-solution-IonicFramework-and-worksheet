@@ -1,0 +1,34 @@
+<!-- views/pages/telecharger.ejs -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- Dépendances EJS : -->
+	<%- include('../partiels/head.ejs') %>
+</head>
+<body class="container">
+
+<main>
+<!-- Variant A (testé OK)
+  <img src="[ALPHA]404-calcul.png" class="img-fluid mx-auto d-block" style="margin-top:100px; margin-bottom:100px;" alt="Statut HTTP 404">
+  <p class="message-404-error text-center"><b>Désolé, la page demandée n'existe pas !<BR><BR>
+  Maintenant allez-vous...<BR>
+  <a href="/configurer" class="text-warning">Configurer</a>, <a href="/importer" class="text-warning">Importer</a>, ou <a href="/telecharger" class="text-warning">Télécharger</a> ?</p>
+-->
+<!-- Variant B (testé OK)-->
+  <img src="[ALPHA]404-lunapark-1.png" class="img-fluid mx-auto d-block my-2" alt="Statut HTTP 404">
+  <p class="message-404-error text-center">Suite à cette erreur de navigation, <BR>
+    profitez de la vue, ou bien repartez afin de...</p>
+  <p class="message-404-error text-center"><a href="/configurer" class="text-warning">Configurer</a>, <a href="/importer" class="text-warning">Importer</a>, ou <a href="/telecharger" class="text-warning">Télécharger</a> ?</p>
+  <img src="[ALPHA]404-lunapark-2.png" class="img-fluid mx-auto d-block my-2" alt="Statut HTTP 404">
+  
+ <!--
+  <img src="[ALPHA]404-repos.png" class="img-fluid mx-auto d-block my-2" alt="Erreur 404 : désolé, pour ce calcul la page n'existe pas !">
+-->
+</main>
+
+<footer>
+	<%- include('../partiels/footer.ejs') %>
+</footer>
+
+</body>
+</html>

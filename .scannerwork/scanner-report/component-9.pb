@@ -1,0 +1,1 @@
+	 2cssXnhrsrc/assets/public/global.css
