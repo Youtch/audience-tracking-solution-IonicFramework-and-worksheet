@@ -1,0 +1,33 @@
+# Node build artifacts
+node_modules
+npm-debug.log
+
+# Local development
+*.env
+*.dev
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+*[[DEV]].*
+*.scannerwork
+coding in progress
+conception projet
+fiddler-npmscript.ps1
+src - Copie*
+src - Copy*
+Copie code avant 1.OPTIMISATION du code 2.TRADUC de commentaires*
+
+src/assets/DEV
+src/assets/admin-key-*.json
+
+# Spécifique aux sessions d'utilisateurs
+src/assets/fichiers_generes/*
+src/assets/local-storage/*
+
+# Docker
+Dockerfile
+docker-compose.yml
+
+#Others
+.hg
+.hgignore

@@ -1,0 +1,24 @@
+{
+  "name": "STAU-community",
+  "version": "1.0.0",
+  "author": "Copyright (c) 2020 FRANÇOIS GARDIEN",
+  "licence": "MIT",
+  "description": "Back-office solution to track the behaviour of mobile apps audience (STAU : Solution de traçage d'actions utilisateurs)",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.14.1",
+    "firebase-admin": "^8.13.0",
+    "node-localstorage": "^2.1.6",
+    "serve-favicon": "~2.3.0",
+    "debug": "~2.2.0"
+  },
+  "engines": {
+    "node": ">= 0.10.x"
+  },
+  "optionalDependencies": {}
+}
