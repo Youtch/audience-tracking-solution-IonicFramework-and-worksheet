@@ -1,1 +1,0 @@
-. 2jsX1hr$src/views/scripts/ajax-configurer.js
