@@ -46,7 +46,7 @@ The request are explained below:
 # V.Exploit the CSV file with the worksheet
 ## When first importing
 1. Launch a dataset importing, then let's generate a CSV file
-2. Open STAU.XLSX (localized at the root folder), then select "Import a data source file" or copy-paste data by selecting each data format expected on columns (NB see more details on the file's first "comment").
+2. Open STAU-1.0.xlsx (localized at the root folder), then select "Import a data source file" or copy-paste data by selecting each data format expected on columns (NB see more details on the file's first "comment").
 3. Watching carefully the provided example sheets, create some new sheets or copy it to new sheets. Then adapt it according to your needs : change labels of columns, delete or create charts...
 4. Watching the provided example sheets, define data links between your sheet named "numerical table" and the "pivot table", and then do it between "pivot table" and your charts (on dashboard sheets).
 
@@ -108,7 +108,7 @@ Les requêtes sont les suivantes :
 # V.Exploiter le fichier CSV avec la feuille de calcul
 ## Lors du premier import
 1. Lancer l'import d'un jeu de données, puis générez un fichier CSV
-2. Ouvrez STAU.XLSX (dans le dossier racine), puis choisissez "importer une source de données" ou copiez-collez les données en SELECTIONNANT les formats attendus dans les colonnes correspondantes (NB : Plus de détail à lire dans le 1er commentaire du fichier).
+2. Ouvrez STAU-1.0.xlsx (dans le dossier racine), puis choisissez "importer une source de données" ou copiez-collez les données en SELECTIONNANT les formats attendus dans les colonnes correspondantes (NB : Plus de détail à lire dans le 1er commentaire du fichier).
 3. En visionnant attentivement les exemples de feuilles de calcul fournies, créez de nouvelles feuilles ou copiez vers de nouvelles feuilles. Puis adaptez les selon vos besoins : changez des libellés de colonnes, supprimez ou créez des graphes...
 4. Selon les exemple de feuilles de calcul fournies, définissez les liaisons de données entre votre feuille nommée "données chiffrées", et la feuille "données pivot", puis entre "données pivot" et vos graphes (sur les feuilles des dashboards).
 
